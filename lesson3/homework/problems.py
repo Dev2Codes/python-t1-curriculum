@@ -46,8 +46,8 @@ else:
 # Print "Correct!" if the guess matches the random number, else print "Try again!".
 import random
 
+ai:int = random.randint(1, 10)
 while True:
-    ai:int = random.randint(1, 10)
     try:
         user:int = int(input("(1-10) which number am I thinking of?: "))
     except ValueError:
@@ -57,7 +57,7 @@ while True:
         print("CORRECT!")
         break
     else:
-        print("Womp Womp! Correct answer was: {}".format(ai))
+        print("Womp Womp!")
 
 
 
